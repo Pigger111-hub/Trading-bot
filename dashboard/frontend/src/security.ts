@@ -1,0 +1,1 @@
+export function safeURL(value:string):string|null{if(!/^https?:\/\//i.test(value))return null;try{const u=new URL(value);return u.protocol==='https:'||u.protocol==='http:'?u.href:null;}catch{return null;}}

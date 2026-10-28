@@ -1,0 +1,86 @@
+{
+  "dataset_id": "79f63ac8f5a247be94adc04f1fa29bb3",
+  "sha256": "053eee01c40056bb721180089852c9967ba89ccc96e6ce5e61a6e4d759aa1da0",
+  "parquet_path": "79f63ac8f5a247be94adc04f1fa29bb3/candles.parquet",
+  "rows": 17520,
+  "source": "https://data-api.binance.vision/api/v3/klines",
+  "symbol": "BTCUSDT",
+  "interval": "1h",
+  "start_ms": 1727740800000,
+  "end_ms": 1790812800000,
+  "fetched_at": "2026-10-28T04:34:32.363000+00:00",
+  "raw_pages": [
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00000.json",
+      "sha256": "25b5cdf91775efbd2535e64c55c695a32cd3df9d22bfdd3792a347d95133cedb"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00001.json",
+      "sha256": "a80e433f24780970ee56cf24876422fd3cee781f13454bfde574875a4248927c"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00002.json",
+      "sha256": "79764132201869f3bd65765a24913f717bfa889e1a6977b954a0d5bb0cbebbce"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00003.json",
+      "sha256": "b8214f4aca6f3c05f8578b7b437ceed04562dcb39e7e610f6693fc4cbf9d0185"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00004.json",
+      "sha256": "192ea662cecccda7b0f198b5b3d828ea6c3fe437cce27c6697588079eb31a9e2"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00005.json",
+      "sha256": "3ac8ded825223e75919c97a42af4c5ecc2d4a6696deb5426941059e221fdc151"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00006.json",
+      "sha256": "d9473e4234b1ac0f283b5e258354ed3336b7ff31ae23be24a04d5ddfc4a86f58"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00007.json",
+      "sha256": "b4b630cb23a447d0d3190affab3f45b382e557b8f64fdfd411ef5a170463efbd"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00008.json",
+      "sha256": "fb43d9a5e4da2323d67e9b8cea5185434d622edb07b97dec134ffa25013f101c"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00009.json",
+      "sha256": "91f1043c48e7b8816d352c10796b49a3ac709bfb0fc3ee28dc603d8ef4343211"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00010.json",
+      "sha256": "d4d4237d2d8570325cc3ac63d1f5d663ec1a9e80020cbcd799a726669f851ae7"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00011.json",
+      "sha256": "0848a66ef3fcfbb83407a494bd1385ed40c5a0b1203b9f60d9e721556794e6ea"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00012.json",
+      "sha256": "f2bcce3b96c5ba3f53e71b9381421bacaede524b03b1a120a75b0478132ef754"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00013.json",
+      "sha256": "132fdb15598f65045e913a82dcae53d74c9e2c7d84f9281045a60b88f67d847d"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00014.json",
+      "sha256": "aa0311824583c15274a6a785e0158f892c1eac402f01ed04a692bfcfea762cc9"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00015.json",
+      "sha256": "d612141e90f81a00610e3b832477d72eb3e86d39d7ce0b338a732cd23111c1d7"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00016.json",
+      "sha256": "06aee7855397113a588fed9e8cd451c85c857cbd2be98b344f81ddb322bc2fa4"
+    },
+    {
+      "path": "79f63ac8f5a247be94adc04f1fa29bb3/raw-00017.json",
+      "sha256": "c4d1fe443f0baf3634a1d757afea54aaaba0ab454c3ce4396f45e822e4a5beeb"
+    }
+  ]
+}

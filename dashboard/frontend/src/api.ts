@@ -1,0 +1,3 @@
+export class ApiError extends Error {constructor(message:string, public integrity=false){super(message);}}
+export async function get<T>(path:string,signal?:AbortSignal,transport:typeof fetch=fetch):Promise<T>{const response=await transport(`/api${path}`,{method:'GET',cache:'no-store',signal,headers:{Accept:'application/json'}});if(!response.ok){let body;try{body=await response.json();}catch{/* Non-JSON errors remain fail closed. */}throw new ApiError(body?.detail?.message_th??`อ่านข้อมูลไม่สำเร็จ (HTTP ${response.status})`,response.status===503||body?.detail?.code==='INTEGRITY_ERROR');}return response.json() as Promise<T>;}
+export const query=(strategy:string,scope:string)=>new URLSearchParams({strategy,scope}).toString();

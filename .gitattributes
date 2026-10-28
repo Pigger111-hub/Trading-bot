@@ -4,3 +4,11 @@
 *.toml text eol=lf
 *.lock text eol=lf
 *.md text eol=lf
+# Evidence bytes (including line endings) are part of recorded SHA256 values.
+reports/** -text -whitespace
+reports/batch*-metrics.csv -text -diff
+data/** -text -whitespace
+storage/** -text -whitespace
+experiments/** -text -whitespace
+knowledge/** -text -whitespace
+governance/** -text -whitespace

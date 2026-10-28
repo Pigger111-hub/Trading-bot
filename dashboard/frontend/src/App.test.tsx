@@ -1,0 +1,11 @@
+// @vitest-environment jsdom
+import {it,expect,vi,afterEach} from 'vitest';
+import {render,screen,waitFor,cleanup,fireEvent} from '@testing-library/react';
+import '@testing-library/jest-dom/vitest';
+import App from './App';
+afterEach(()=>{cleanup();vi.unstubAllGlobals();});
+// SYNTHETIC transport fixtures: only tests, never rendered by production as fallback.
+const syntheticOverview={batch_id:'SYNTHETIC',integrity:{verified:true},strategies:[{id:'10-50',label:'SYNTHETIC SMA',scopes:[{id:'development',label_th:'SYNTHETIC dev'},{id:'oos_1',label_th:'SYNTHETIC OOS1'}]},{id:'20-100',label:'SYNTHETIC alternate',scopes:[{id:'oos_1',label_th:'SYNTHETIC OOS1'}]}]};
+it('removes a previously verified overview after dependent view503',async()=>{const fetcher=vi.fn(async(url:unknown)=>String(url).endsWith('/overview')?new Response(JSON.stringify(syntheticOverview)):new Response(JSON.stringify({detail:{code:'INTEGRITY_ERROR',message_th:'SYNTHETIC mutated artifact'}}),{status:503}));vi.stubGlobal('fetch',fetcher);render(<App/>);await waitFor(()=>expect(screen.getByRole('alert')).toHaveTextContent('SYNTHETIC mutated artifact'));expect(screen.queryByText('VERIFIED')).not.toBeInTheDocument();expect(fetcher.mock.calls.some(([url])=>String(url).includes('strategy=10-50&scope=oos_1'))).toBe(true);});
+it('retry performs a new read rather than keeping the previous failure',async()=>{const fetcher=vi.fn(async()=>new Response('{"detail":{"message_th":"SYNTHETIC failure"}}',{status:503}));vi.stubGlobal('fetch',fetcher);render(<App/>);await screen.findByRole('alert');const before=fetcher.mock.calls.length;fireEvent.click(screen.getByRole('button',{name:/ตรวจสอบใหม่/}));await waitFor(()=>expect(fetcher.mock.calls.length).toBeGreaterThan(before));});
+it('fails closed on integrity503 without any verified badge',async()=>{vi.stubGlobal('fetch',vi.fn(async()=>new Response(JSON.stringify({detail:{code:'INTEGRITY_ERROR',message_th:'หลักฐานไม่ผ่านการตรวจสอบ'}}),{status:503})));render(<App/>);await waitFor(()=>expect(screen.getByRole('alert')).toHaveTextContent('หลักฐานไม่ผ่านการตรวจสอบ'));expect(screen.queryByText('VERIFIED')).not.toBeInTheDocument();expect(screen.getByRole('button',{name:/ตรวจสอบใหม่/})).toBeEnabled();});

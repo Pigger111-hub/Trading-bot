@@ -1,0 +1,2 @@
+import {it,expect} from 'vitest';import {safeURL} from './security';
+it('accepts only explicit HTTP(S) and rejects script/data/relative URLs',()=>{expect(safeURL('https://example.org/a')).toBe('https://example.org/a');expect(safeURL('http://example.org')).toBe('http://example.org/');for(const value of ['javascript:alert(1)','data:text/html,x','//example.org','/api/source','file:///c:/x',' https://example.org'])expect(safeURL(value)).toBe(null);});
