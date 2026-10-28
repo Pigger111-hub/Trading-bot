@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "reviewed_code_sha256": "4bc3bb016366a3275eceb447344ad76976c0feff5b3d654866a457a1cece05d2",
+  "security_concerns": [],
+  "logic_errors": [
+    "dashboard/frontend/src/Charts.tsx:21: BH10/BH100 curves are not explicitly labelled as reconstructed. dashboard/backend/dashboard_api/evidence.py:453-465 constructs their intermediate values from saved baseline cash/quantity and archived closes, whereas SMA equity points come directly from the persisted curve. The portfolio chart labels allocation, context and timestamp semantics but does not disclose this evidence-type distinction, violating the explicit requirement to label reconstructed B&H curves."
+  ],
+  "suggestions": [
+    "dashboard/frontend/src/Charts.test.tsx: Add a rendering regression asserting that the portfolio chart explicitly distinguishes persisted SMA equity from reconstructed B&H curves.",
+    "dashboard/frontend/src/App.test.tsx: Add delayed-response tests covering strategy/fold switching and integrity failure while trade/source requests remain in flight."
+  ],
+  "summary": "Independent file review found one blocking evidence-labelling defect. Backend tests: 52 passed; frontend tests: 13 passed; TypeScript check and backend Ruff passed. Actual API overview/view and five closed-trade drilldowns succeeded; all 20 trace rows matched their original raw-page hashes and indexed values. Protected-file verification found no changes across 56 files, with 88 registry events and 20 engine evaluations. Requested canonical dashboard digest matched before and after review. No project files were edited, and no backtest or engine was run. Browser interaction and production build were not independently repeated."
+}

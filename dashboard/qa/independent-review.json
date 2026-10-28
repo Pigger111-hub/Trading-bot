@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reviewed_code_sha256": "e7bb409a4787b64bd807933372180f4f18ff3dd0737b2eeba523ce380a16fbe3",
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [],
+  "summary": "The narrow correction resolves the prior disclosure blocker. The actual diff adds only a Thai portfolio disclosure and its SSR regression test. It explicitly distinguishes persisted Batch001 SMA equity from deterministically reconstructed BH10/BH100 curves using saved baseline cash/quantity and archived Binance closes, states that full benchmark curves were not originally persisted, and disclaims a new backtest. This matches evidence.py lines 453–474. Removing the added paragraph reproduces the prior Charts.tsx content exactly after newline normalization; no numerical or interaction logic changed. All 14 frontend tests passed. The canonical 31-file hash matched the expected value before and after testing. No source edits, commits, pushes, engine runs, or backtests were performed; this verdict grants no deployment or execution permission."
+}

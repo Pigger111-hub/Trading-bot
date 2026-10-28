@@ -103,6 +103,12 @@ REST raw row: `[open_time_ms, open, high, low, close, volume, close_time_ms, quo
 - `HYPOTHESIS`: ข้อเสนอที่ยังไม่ถูกทดลอง/อนุมัติ
 - Critic verdict เดิมและ batch-level correction เก็บแยก ไม่แก้ประวัติให้ดูดีขึ้น ไม่มี winner selection หรือ strategy promotion
 
+## Five actual simulated trades
+
+อ่านคู่มือภาษาไทย `FIVE-TRADES-TH.md`: เลือก SMA 10/50 / OOS 1 แล้วตรวจ #1–#5 พร้อมราคาจำนวนค่าธรรมเนียม Net P&L และตำแหน่ง raw JSON ครบ 20 trace rows ที่ตรวจ hash และเทียบ saved ledger แล้ว
+
+ผลทดสอบและข้อจำกัดอยู่ที่ `qa/report.md`; independent review เริ่มแรกและ re-review หลังแก้ disclosure เก็บแยกใน `qa/independent-review-initial.json` และ `qa/independent-review.json` ไม่มีผลต่อ approval หรือ evaluation budget ของ research engine
+
 ## Reference image
 
 ไม่พบไฟล์ screenshot แนบในคำขอ Phase 2.5 นี้ จึงใช้ dark professional trading-terminal layout ตามคำอธิบาย ไม่อ้างว่าเป็นการจำลอง screenshot ที่ไม่ได้รับ

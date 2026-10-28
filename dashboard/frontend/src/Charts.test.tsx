@@ -6,6 +6,15 @@ import type {View} from './types';
 // Explicitly synthetic layout-only fixture; no market data or strategy execution.
 const view={strategy:{fast:10,slow:50},scope:{start_utc:'2020-01-01T00:00:00Z',end_exclusive_utc:'2020-01-02T00:00:00Z'},candles:[],executions:[],equity:[]} as unknown as View;
 
+describe('portfolio evidence labelling',()=>{
+  it('distinguishes persisted SMA evidence from reconstructed BH10/BH100 curves',()=>{
+    const html=renderToStaticMarkup(<PortfolioCharts view={view}/>);
+    expect(html).toContain('เส้น equity ของ SMA เป็นหลักฐานที่บันทึกไว้จาก Batch001');
+    expect(html).toContain('เส้น BH10/BH100 เป็นการสร้างกลับแบบกำหนดแน่นอน (deterministic reconstruction) จากเงินสดและจำนวนสินทรัพย์ baseline ที่บันทึกไว้ ร่วมกับราคาปิด Binance ที่เก็บถาวร');
+    expect(html).toContain('ไม่ใช่เส้น benchmark ครบชุดที่บันทึกไว้ตั้งแต่แรก และไม่ใช่การรัน backtest ใหม่');
+  });
+});
+
 describe('autosized chart container regression',()=>{
   it('constrains the market host height independently of chart children',()=>{
     const html=renderToStaticMarkup(<MarketChart view={view} selected={null} onSelect={()=>{}}/>);

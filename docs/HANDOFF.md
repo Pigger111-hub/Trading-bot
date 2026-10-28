@@ -5,10 +5,10 @@
 This backup contains the paper-only research code, the Phase 2.5 read-only dashboard, and the existing audited Batch 001 artifacts. It is not permission to execute another batch, start paper trading, enable a scheduler, or promote a strategy.
 
 - Phase 0–2: existing bounded research implementation and completed Batch 001.
-- Phase 2.5: dashboard implemented; backend 52 tests and frontend 13 tests passed; TypeScript/Vite build passed. Browser QA exercised actual trades, raw rows, portfolio, research, integrity and a 390px mobile viewport.
+- Phase 2.5: dashboard implemented; backend 52 tests and frontend 14 tests passed; TypeScript/Vite build passed. Browser QA exercised actual trades, chart-coordinate selection, terminal open positions, raw rows, portfolio, research/source dialogs, integrity and a 390px mobile viewport.
 - Browser QA found an autosized chart height feedback loop. Explicit host heights and two regression tests fixed it; the subsequent browser run reported no captured runtime errors.
-- Independent Phase 2.5 review was still pending when this handoff was written. Do not infer a passed review from this backup commit.
-- Final Thai five-trade walkthrough and final delivery report remain to be completed in the active task.
+- Initial independent review blocked an omitted B&H reconstruction label. A separate TDD fix and independent re-review passed; review records remain separate under `dashboard/qa/`. The reviewed 31-file dashboard digest is `e7bb409a4787b64bd807933372180f4f18ff3dd0737b2eeba523ce380a16fbe3`. Software acceptance does not grant execution/deployment approval.
+- Thai five-trade walkthrough: `dashboard/FIVE-TRADES-TH.md`; QA checks/limits: `dashboard/qa/report.md`. Five saved trades and their 20 indexed raw rows were directly verified without engine execution.
 
 ## Safety / authorization
 
@@ -52,4 +52,4 @@ No credentials, `.env`, Hermes profile/state/chat history, virtual environments,
 
 ## Resume prompt
 
-> Read docs/HANDOFF.md and dashboard/README.md. Verify original Batch 001 evidence without running the research engine or consuming evaluations. Complete the pending independent dashboard review and Thai five-actual-trade walkthrough. Preserve paper-only, read-only and halted approval boundaries. Do not begin another experiment, scheduler, continuous paper trading or strategy promotion.
+> Read docs/HANDOFF.md, dashboard/README.md and dashboard/FIVE-TRADES-TH.md. Verify original Batch 001 evidence without running the research engine or consuming evaluations. Phase 2.5 software review passed; help the user inspect the existing results and their limitations in Thai. Preserve paper-only, read-only and halted approval boundaries. Do not begin another experiment, scheduler, continuous paper trading or strategy promotion without separate explicit approval.
