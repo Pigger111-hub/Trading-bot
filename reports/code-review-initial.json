@@ -1,0 +1,20 @@
+{
+  "review_id": "deleg_c7ddd8c1",
+  "stage": "initial_independent_review",
+  "passed": false,
+  "reviewer": "independent security/lifecycle and quantitative reviewers",
+  "code_hash": "793deb5d25cf8033b73de9b7844f2b892dd5feb5f0a5d27aa244fd17d9861771",
+  "security_concerns": [
+    "Approval review JSON accepted missing or incorrectly typed findings arrays."
+  ],
+  "logic_errors": [
+    "Experiment learning ignored a model-call cap below the required two-call protocol.",
+    "CLI could return exit 0 for a failed or partially failed loop result.",
+    "Holdout freshness compared only previous final holdouts, not all previously exposed data.",
+    "Raw response pages were not reconstructed and compared to Parquet; provenance identity was not approval-bound."
+  ],
+  "suggestions": [
+    "Bind full experiment result artifacts with SHA256, separate from audit-chain integrity."
+  ],
+  "decision": "BLOCKED: no actual market experiment execution approved. Fix and independently re-review."
+}

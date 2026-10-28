@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "mode": "research_only",
+  "market": "spot",
+  "symbols": ["BTCUSDT"],
+  "intervals": ["1h"],
+  "allow_credentials": false,
+  "allow_live_orders": false,
+  "allow_paper_loop": false,
+  "allow_short": false,
+  "leverage": 1,
+  "max_position_fraction": 0.10,
+  "max_batch_runs": 8,
+  "max_research_cycles": 3,
+  "max_model_calls_per_cycle": 3,
+  "scheduler_enabled": false,
+  "allow_dynamic_code": false
+}
