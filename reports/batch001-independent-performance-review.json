@@ -1,0 +1,868 @@
+{
+  "kind": "DATA",
+  "schema": "batch001_independent_performance_review_v1",
+  "created_at": "2026-10-28T06:10:01.812200+00:00",
+  "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+  "code_hash": "68878a4bf03dd9912e4970ba126858ac7c1fbbc6f995700fb8a735b681cbbec8",
+  "input_sha256": {
+    "reports\\batch001-metrics.json": "832bdf655c8d570bbc16078d48053002f0a96741ef3eba6d55d2e0e893edf3bf",
+    "reports\\batch001-metrics.csv": "f15dcbb1b7e7cd0e811bf7406329e5af8de0b09b5453b684009bc0c6b8b662ca"
+  },
+  "artifact_bindings": [
+    {
+      "artifact": "experiments/ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8.json",
+      "artifact_sha256": "3fcad33025a088d424482b212ae64eef74f4cf3d4654a0a34382d5ed364a6dda",
+      "kind": "FINDING",
+      "metrics": {
+        "exposure_pct": 54.50057405281286,
+        "max_drawdown_pct": -4.689447783987966,
+        "return_pct": 0.2305981077624253,
+        "trades": 117
+      },
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "simulation": true,
+      "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+      "verdict": {
+        "eligible_for_paper": false,
+        "issues": [
+          "No verified real profit; backtest simulation only.",
+          "No automatic strategy promotion; continuous paper needs separate human approval."
+        ],
+        "real_profit_verified": false,
+        "simulation": true,
+        "verdict": "INCONCLUSIVE"
+      }
+    },
+    {
+      "artifact": "experiments/69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19.json",
+      "artifact_sha256": "c50f5573da1816c5d422cbacaeb45da350401343b8364d57ab903b5f392e8f44",
+      "kind": "FINDING",
+      "metrics": {
+        "exposure_pct": 54.18013856812933,
+        "max_drawdown_pct": -5.724470491334143,
+        "return_pct": -0.9357015947719982,
+        "trades": 84
+      },
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "simulation": true,
+      "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+      "verdict": {
+        "eligible_for_paper": false,
+        "issues": [
+          "No verified real profit; backtest simulation only.",
+          "No automatic strategy promotion; continuous paper needs separate human approval."
+        ],
+        "real_profit_verified": false,
+        "simulation": true,
+        "verdict": "INCONCLUSIVE"
+      }
+    },
+    {
+      "artifact": "experiments/c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c.json",
+      "artifact_sha256": "936bd81dfed3de50f9054a36e03b7a95282b2dfb66685aaa707c53f973d8c8e2",
+      "kind": "FINDING",
+      "metrics": {
+        "exposure_pct": 54.28243398392652,
+        "max_drawdown_pct": -6.102683569136702,
+        "return_pct": -2.1459651173870053,
+        "trades": 104
+      },
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "simulation": true,
+      "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+      "verdict": {
+        "eligible_for_paper": false,
+        "issues": [
+          "No verified real profit; backtest simulation only.",
+          "No automatic strategy promotion; continuous paper needs separate human approval."
+        ],
+        "real_profit_verified": false,
+        "simulation": true,
+        "verdict": "INCONCLUSIVE"
+      }
+    },
+    {
+      "artifact": "experiments/aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066.json",
+      "artifact_sha256": "936f80112c37a4d67d1b89fb1667da3fd1f4d90c86410ae6fd80d54ecc497ef4",
+      "kind": "FINDING",
+      "metrics": {
+        "exposure_pct": 55.02309468822171,
+        "max_drawdown_pct": -3.6018233821308976,
+        "return_pct": 3.1483149210096872,
+        "trades": 58
+      },
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "simulation": true,
+      "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+      "verdict": {
+        "eligible_for_paper": false,
+        "issues": [
+          "No verified real profit; backtest simulation only.",
+          "No automatic strategy promotion; continuous paper needs separate human approval."
+        ],
+        "real_profit_verified": false,
+        "simulation": true,
+        "verdict": "INCONCLUSIVE"
+      }
+    }
+  ],
+  "registry_verified_events": 86,
+  "passed_metrics_checks": {
+    "all_passed": true,
+    "checks": {
+      "raw_page_hash": {
+        "count": 18,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "raw_unique_hourly_bars": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "archived_hourly_spacing_ms": {
+        "count": 17519,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "json_rows": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "unique_metric_rows": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "csv_rows": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "csv_schema": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "csv_json_values": {
+        "count": 1152,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "source_artifact_binding": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "independent_accounts": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "no_parameter_selection": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "holdout_fold": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "window_hours": {
+        "count": 16,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "evaluation_bars": {
+        "count": 16,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "curve_hourly_time": {
+        "count": 69780,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "baseline_initial_allocation": {
+        "count": 32,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "baseline_entry_next_open": {
+        "count": 32,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "baseline_no_terminal_exit_fee": {
+        "count": 32,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_terminal_equity": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_total_return_pct": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_annualized_return_pct": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_max_drawdown_pct": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_sharpe_hourly_rf0": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_win_rate_pct": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 7.105427357601002e-15,
+        "tolerance": 1e-09
+      },
+      "metric_closed_trades": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_winning_trades": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_open_positions": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_entries": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_hours": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_start_utc": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_end_exclusive_utc": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "metric_source_artifact_sha256": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stored_return": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stored_drawdown": {
+        "count": 64,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "fold_test_start": {
+        "count": 12,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "fold_test_end": {
+        "count": 12,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "fold_test_bars": {
+        "count": 12,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "fold_role": {
+        "count": 12,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_retained_fields": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_saved_aggregates": {
+        "count": 12,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_annualization": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_sharpe_unavailable": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_win_rate_unavailable": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "stress_scope": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      },
+      "oos_summary_oos_drawdown_better_than_bh10_folds": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "oos_summary_oos_return_above_bh10_folds": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "oos_summary_positive_oos_folds": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "oos_summary_oos_closed_trades_total": {
+        "count": 4,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "registry_count_unchanged": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 0
+      },
+      "protected_files_unchanged": {
+        "count": 1,
+        "failed": 0,
+        "max_absolute_error": 0.0,
+        "tolerance": 1e-09
+      }
+    },
+    "metric_rows": 64,
+    "independent_windows": 16,
+    "numeric_tolerance": 1e-09,
+    "method": {
+      "annualized_return": "(terminal_equity/10000)^(8760/evaluation_hours)-1; 365-day year",
+      "baselines": "Reconstructed from SAVED size, remaining cash, entry time, and archived closes, no strategy evaluation.",
+      "scope": "Each fold is an independent account. No concatenated two-year strategy return or pooled Sharpe.",
+      "sharpe": "mean(simple hourly equity returns)/sample_std(ddof=1)*sqrt(8760), risk-free=0; null if zero variance",
+      "timing": "Initial 10000 at first evaluated candle open; each recorded close is timestamp+1h.",
+      "win_rate": "strictly positive net PnL / completed round trips; terminal marks excluded; undefined for zero closed trades"
+    },
+    "windows": [
+      {
+        "configuration": "10/50",
+        "scope": "development",
+        "hours": 8710,
+        "start_utc": "2024-10-03T02:00:00+00:00",
+        "end_exclusive_utc": "2025-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "10/50",
+        "scope": "oos_1",
+        "hours": 2920,
+        "start_utc": "2025-10-01T00:00:00+00:00",
+        "end_exclusive_utc": "2026-01-30T16:00:00+00:00"
+      },
+      {
+        "configuration": "10/50",
+        "scope": "oos_2",
+        "hours": 2920,
+        "start_utc": "2026-01-30T16:00:00+00:00",
+        "end_exclusive_utc": "2026-06-01T08:00:00+00:00"
+      },
+      {
+        "configuration": "10/50",
+        "scope": "oos_3",
+        "hours": 2920,
+        "start_utc": "2026-06-01T08:00:00+00:00",
+        "end_exclusive_utc": "2026-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "10/100",
+        "scope": "development",
+        "hours": 8660,
+        "start_utc": "2024-10-05T04:00:00+00:00",
+        "end_exclusive_utc": "2025-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "10/100",
+        "scope": "oos_1",
+        "hours": 2920,
+        "start_utc": "2025-10-01T00:00:00+00:00",
+        "end_exclusive_utc": "2026-01-30T16:00:00+00:00"
+      },
+      {
+        "configuration": "10/100",
+        "scope": "oos_2",
+        "hours": 2920,
+        "start_utc": "2026-01-30T16:00:00+00:00",
+        "end_exclusive_utc": "2026-06-01T08:00:00+00:00"
+      },
+      {
+        "configuration": "10/100",
+        "scope": "oos_3",
+        "hours": 2920,
+        "start_utc": "2026-06-01T08:00:00+00:00",
+        "end_exclusive_utc": "2026-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "20/50",
+        "scope": "development",
+        "hours": 8710,
+        "start_utc": "2024-10-03T02:00:00+00:00",
+        "end_exclusive_utc": "2025-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "20/50",
+        "scope": "oos_1",
+        "hours": 2920,
+        "start_utc": "2025-10-01T00:00:00+00:00",
+        "end_exclusive_utc": "2026-01-30T16:00:00+00:00"
+      },
+      {
+        "configuration": "20/50",
+        "scope": "oos_2",
+        "hours": 2920,
+        "start_utc": "2026-01-30T16:00:00+00:00",
+        "end_exclusive_utc": "2026-06-01T08:00:00+00:00"
+      },
+      {
+        "configuration": "20/50",
+        "scope": "oos_3",
+        "hours": 2920,
+        "start_utc": "2026-06-01T08:00:00+00:00",
+        "end_exclusive_utc": "2026-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "20/100",
+        "scope": "development",
+        "hours": 8660,
+        "start_utc": "2024-10-05T04:00:00+00:00",
+        "end_exclusive_utc": "2025-10-01T00:00:00+00:00"
+      },
+      {
+        "configuration": "20/100",
+        "scope": "oos_1",
+        "hours": 2920,
+        "start_utc": "2025-10-01T00:00:00+00:00",
+        "end_exclusive_utc": "2026-01-30T16:00:00+00:00"
+      },
+      {
+        "configuration": "20/100",
+        "scope": "oos_2",
+        "hours": 2920,
+        "start_utc": "2026-01-30T16:00:00+00:00",
+        "end_exclusive_utc": "2026-06-01T08:00:00+00:00"
+      },
+      {
+        "configuration": "20/100",
+        "scope": "oos_3",
+        "hours": 2920,
+        "start_utc": "2026-06-01T08:00:00+00:00",
+        "end_exclusive_utc": "2026-10-01T00:00:00+00:00"
+      }
+    ]
+  },
+  "per_configuration_verdicts": [
+    {
+      "configuration": "10/50",
+      "verdict": "MIXED_DRAWDOWN_EVIDENCE",
+      "explanation_th": "ลด drawdown ได้ 2 ใน 3 ช่วงนอกตัวอย่าง แต่ช่วงแรก drawdown แย่กว่า BH10 จึงไม่สม่ำเสมอตามสมมติฐานเดิม ผลตอบแทนนอกตัวอย่างติดลบสองช่วงและเป็นบวกช่วงสุดท้าย การได้ผลตอบแทนต่ำกว่าเกณฑ์ไม่ใช่เหตุให้ปฏิเสธสมมติฐานลด drawdown โดยลำพัง ไม่มีการจัดอันดับหรือเลือกผู้ชนะจาก holdout",
+      "all_windows": [
+        {
+          "scope": "development",
+          "sma_return_pct": 0.2305981077624253,
+          "bh10_return_pct": 8.61202730321633,
+          "return_difference_pp": -8.381429195453904,
+          "sma_drawdown_pct": -4.689447783987966,
+          "bh10_drawdown_pct": -5.0787095688621715,
+          "drawdown_benefit_pp": 0.38926178487420593,
+          "sma_annualized_return_pct": 0.23192339655317973,
+          "sma_sharpe_hourly_rf0": 0.08555911878871449,
+          "sma_win_rate_pct": 31.62393162393162,
+          "sma_closed_trades": 117
+        },
+        {
+          "scope": "oos_1",
+          "sma_return_pct": -3.7722870156278066,
+          "bh10_return_pct": -2.755592774077409,
+          "return_difference_pp": -1.0166942415503977,
+          "sma_drawdown_pct": -4.393134847789537,
+          "bh10_drawdown_pct": -3.793884235573708,
+          "drawdown_benefit_pp": -0.5992506122158292,
+          "sma_annualized_return_pct": -10.895324587789347,
+          "sma_sharpe_hourly_rf0": -4.3762015598136825,
+          "sma_win_rate_pct": 21.428571428571427,
+          "sma_closed_trades": 42
+        },
+        {
+          "scope": "oos_2",
+          "sma_return_pct": -1.6287402847290688,
+          "bh10_return_pct": -1.2555889135833942,
+          "return_difference_pp": -0.37315137114567465,
+          "sma_drawdown_pct": -1.6899344247835457,
+          "bh10_drawdown_pct": -2.563599544770956,
+          "drawdown_benefit_pp": 0.8736651199874101,
+          "sma_annualized_return_pct": -4.807069078128756,
+          "sma_sharpe_hourly_rf0": -1.5640148519444195,
+          "sma_win_rate_pct": 29.72972972972973,
+          "sma_closed_trades": 37
+        },
+        {
+          "scope": "oos_3",
+          "sma_return_pct": 1.1004818732899935,
+          "bh10_return_pct": 1.4533998336730969,
+          "return_difference_pp": -0.3529179603831034,
+          "sma_drawdown_pct": -1.475365918052951,
+          "bh10_drawdown_pct": -2.016360472817902,
+          "drawdown_benefit_pp": 0.5409945547649508,
+          "sma_annualized_return_pct": 3.3379107054698265,
+          "sma_sharpe_hourly_rf0": 1.1700291300916363,
+          "sma_win_rate_pct": 31.70731707317073,
+          "sma_closed_trades": 41
+        }
+      ],
+      "oos_drawdown_benefit_folds": 2,
+      "oos_closed_trades_total": 120
+    },
+    {
+      "configuration": "10/100",
+      "verdict": "DESCRIPTIVE_DRAWDOWN_SUPPORT_NOT_PROVEN",
+      "explanation_th": "ลด drawdown เทียบ BH10 ได้ทั้ง 3 ช่วงนอกตัวอย่าง เป็นหลักฐานเชิงพรรณนาที่สอดคล้องกับสมมติฐานเดิม แต่ยังไม่พิสูจน์นัยสำคัญหรือความทนทานในอนาคต ผลตอบแทนนอกตัวอย่างติดลบสองช่วงและเป็นบวกช่วงสุดท้าย การได้ผลตอบแทนต่ำกว่าเกณฑ์ไม่ใช่เหตุให้ปฏิเสธสมมติฐานลด drawdown โดยลำพัง ไม่มีการจัดอันดับหรือเลือกผู้ชนะจาก holdout",
+      "all_windows": [
+        {
+          "scope": "development",
+          "sma_return_pct": -0.9357015947719982,
+          "bh10_return_pct": 8.382248470781374,
+          "return_difference_pp": -9.317950065553372,
+          "sma_drawdown_pct": -5.724470491334143,
+          "bh10_drawdown_pct": -5.026197398069709,
+          "drawdown_benefit_pp": -0.6982730932644339,
+          "sma_annualized_return_pct": -0.9464551702993318,
+          "sma_sharpe_hourly_rf0": -0.2586400796382597,
+          "sma_win_rate_pct": 25.0,
+          "sma_closed_trades": 84
+        },
+        {
+          "scope": "oos_1",
+          "sma_return_pct": -2.5579861616993327,
+          "bh10_return_pct": -2.755592774077409,
+          "return_difference_pp": 0.1976066123780762,
+          "sma_drawdown_pct": -3.1757662650643947,
+          "bh10_drawdown_pct": -3.793884235573708,
+          "drawdown_benefit_pp": 0.6181179705093132,
+          "sma_annualized_return_pct": -7.479333454341274,
+          "sma_sharpe_hourly_rf0": -3.060418747585778,
+          "sma_win_rate_pct": 13.636363636363635,
+          "sma_closed_trades": 22
+        },
+        {
+          "scope": "oos_2",
+          "sma_return_pct": -1.271315346815205,
+          "bh10_return_pct": -1.2555889135833942,
+          "return_difference_pp": -0.015726433231810777,
+          "sma_drawdown_pct": -1.794347953263975,
+          "bh10_drawdown_pct": -2.563599544770956,
+          "drawdown_benefit_pp": 0.7692515915069809,
+          "sma_annualized_return_pct": -3.7656642345304525,
+          "sma_sharpe_hourly_rf0": -1.2493522598404492,
+          "sma_win_rate_pct": 17.24137931034483,
+          "sma_closed_trades": 29
+        },
+        {
+          "scope": "oos_3",
+          "sma_return_pct": 1.3955746411714154,
+          "bh10_return_pct": 1.4533998336730969,
+          "return_difference_pp": -0.0578251925016815,
+          "sma_drawdown_pct": -1.3960430031092153,
+          "bh10_drawdown_pct": -2.016360472817902,
+          "drawdown_benefit_pp": 0.6203174697086866,
+          "sma_annualized_return_pct": 4.245424586992197,
+          "sma_sharpe_hourly_rf0": 1.426490417348071,
+          "sma_win_rate_pct": 30.0,
+          "sma_closed_trades": 20
+        }
+      ],
+      "oos_drawdown_benefit_folds": 3,
+      "oos_closed_trades_total": 71
+    },
+    {
+      "configuration": "20/50",
+      "verdict": "DESCRIPTIVE_DRAWDOWN_SUPPORT_NOT_PROVEN",
+      "explanation_th": "ลด drawdown เทียบ BH10 ได้ทั้ง 3 ช่วงนอกตัวอย่าง เป็นหลักฐานเชิงพรรณนาที่สอดคล้องกับสมมติฐานเดิม แต่ยังไม่พิสูจน์นัยสำคัญหรือความทนทานในอนาคต ผลตอบแทนนอกตัวอย่างติดลบสองช่วงและเป็นบวกช่วงสุดท้าย การได้ผลตอบแทนต่ำกว่าเกณฑ์ไม่ใช่เหตุให้ปฏิเสธสมมติฐานลด drawdown โดยลำพัง ไม่มีการจัดอันดับหรือเลือกผู้ชนะจาก holdout",
+      "all_windows": [
+        {
+          "scope": "development",
+          "sma_return_pct": -2.1459651173870053,
+          "bh10_return_pct": 8.61202730321633,
+          "return_difference_pp": -10.757992420603335,
+          "sma_drawdown_pct": -6.102683569136702,
+          "bh10_drawdown_pct": -5.0787095688621715,
+          "drawdown_benefit_pp": -1.0239740002745306,
+          "sma_annualized_return_pct": -2.158150195556041,
+          "sma_sharpe_hourly_rf0": -0.6312509711220825,
+          "sma_win_rate_pct": 32.69230769230769,
+          "sma_closed_trades": 104
+        },
+        {
+          "scope": "oos_1",
+          "sma_return_pct": -1.8159496121879615,
+          "bh10_return_pct": -2.755592774077409,
+          "return_difference_pp": 0.9396431618894474,
+          "sma_drawdown_pct": -2.32429307157912,
+          "bh10_drawdown_pct": -3.793884235573708,
+          "drawdown_benefit_pp": 1.469591163994588,
+          "sma_annualized_return_pct": -5.349517487543176,
+          "sma_sharpe_hourly_rf0": -2.164520547483046,
+          "sma_win_rate_pct": 25.0,
+          "sma_closed_trades": 28
+        },
+        {
+          "scope": "oos_2",
+          "sma_return_pct": -0.6093168226917411,
+          "bh10_return_pct": -1.2555889135833942,
+          "return_difference_pp": 0.646272090891653,
+          "sma_drawdown_pct": -1.3950637568598934,
+          "bh10_drawdown_pct": -2.563599544770956,
+          "drawdown_benefit_pp": 1.1685357879110625,
+          "sma_annualized_return_pct": -1.816835080285062,
+          "sma_sharpe_hourly_rf0": -0.5684449517105336,
+          "sma_win_rate_pct": 37.93103448275862,
+          "sma_closed_trades": 29
+        },
+        {
+          "scope": "oos_3",
+          "sma_return_pct": 0.6463434566007065,
+          "bh10_return_pct": 1.4533998336730969,
+          "return_difference_pp": -0.8070563770723904,
+          "sma_drawdown_pct": -1.591155031114555,
+          "bh10_drawdown_pct": -2.016360472817902,
+          "drawdown_benefit_pp": 0.42520544170334684,
+          "sma_annualized_return_pct": 1.951590167354289,
+          "sma_sharpe_hourly_rf0": 0.6756034494139331,
+          "sma_win_rate_pct": 33.33333333333333,
+          "sma_closed_trades": 33
+        }
+      ],
+      "oos_drawdown_benefit_folds": 3,
+      "oos_closed_trades_total": 90
+    },
+    {
+      "configuration": "20/100",
+      "verdict": "DESCRIPTIVE_DRAWDOWN_SUPPORT_NOT_PROVEN",
+      "explanation_th": "ลด drawdown เทียบ BH10 ได้ทั้ง 3 ช่วงนอกตัวอย่าง เป็นหลักฐานเชิงพรรณนาที่สอดคล้องกับสมมติฐานเดิม แต่ยังไม่พิสูจน์นัยสำคัญหรือความทนทานในอนาคต ผลตอบแทนนอกตัวอย่างติดลบสองช่วงและเป็นบวกช่วงสุดท้าย การได้ผลตอบแทนต่ำกว่าเกณฑ์ไม่ใช่เหตุให้ปฏิเสธสมมติฐานลด drawdown โดยลำพัง ไม่มีการจัดอันดับหรือเลือกผู้ชนะจาก holdout",
+      "all_windows": [
+        {
+          "scope": "development",
+          "sma_return_pct": 3.1483149210096872,
+          "bh10_return_pct": 8.382248470781374,
+          "return_difference_pp": -5.233933549771686,
+          "sma_drawdown_pct": -3.6018233821308976,
+          "bh10_drawdown_pct": -5.026197398069709,
+          "drawdown_benefit_pp": 1.4243740159388119,
+          "sma_annualized_return_pct": 3.1852425722507904,
+          "sma_sharpe_hourly_rf0": 0.9058342146483772,
+          "sma_win_rate_pct": 32.758620689655174,
+          "sma_closed_trades": 58
+        },
+        {
+          "scope": "oos_1",
+          "sma_return_pct": -2.0602580455771236,
+          "bh10_return_pct": -2.755592774077409,
+          "return_difference_pp": 0.6953347285002853,
+          "sma_drawdown_pct": -2.2692615065602384,
+          "bh10_drawdown_pct": -3.793884235573708,
+          "drawdown_benefit_pp": 1.5246227290134695,
+          "sma_annualized_return_pct": -6.054308750454229,
+          "sma_sharpe_hourly_rf0": -2.4266838252816627,
+          "sma_win_rate_pct": 15.0,
+          "sma_closed_trades": 20
+        },
+        {
+          "scope": "oos_2",
+          "sma_return_pct": -1.9312915117401852,
+          "bh10_return_pct": -1.2555889135833942,
+          "return_difference_pp": -0.675702598156791,
+          "sma_drawdown_pct": -2.024119030246996,
+          "bh10_drawdown_pct": -2.563599544770956,
+          "drawdown_benefit_pp": 0.5394805145239601,
+          "sma_annualized_return_pct": -5.682698278012577,
+          "sma_sharpe_hourly_rf0": -1.8729362911961407,
+          "sma_win_rate_pct": 27.77777777777778,
+          "sma_closed_trades": 18
+        },
+        {
+          "scope": "oos_3",
+          "sma_return_pct": 0.3246766180688754,
+          "bh10_return_pct": 1.4533998336730969,
+          "return_difference_pp": -1.1287232156042215,
+          "sma_drawdown_pct": -1.8678322898999844,
+          "bh10_drawdown_pct": -2.016360472817902,
+          "drawdown_benefit_pp": 0.14852818291791747,
+          "sma_annualized_return_pct": 0.9771957239717688,
+          "sma_sharpe_hourly_rf0": 0.34385868280224197,
+          "sma_win_rate_pct": 23.52941176470588,
+          "sma_closed_trades": 17
+        }
+      ],
+      "oos_drawdown_benefit_folds": 3,
+      "oos_closed_trades_total": 55
+    }
+  ],
+  "batch_verdict": {
+    "verdict": "DESCRIPTIVE_DRAWDOWN_EVIDENCE_ONLY_NO_PROMOTION",
+    "explanation_th": "ทั้ง 4 ชุดต้องรายงานครบ ไม่เลือกผู้ชนะจาก holdout ชุด 10/100, 20/50 และ 20/100 มี drawdown ต่ำกว่า BH10 ครบสามช่วง ส่วน 10/50 ต่ำกว่าเพียงสองช่วง หลักฐานสนับสนุนเชิงพรรณนาบางชุด ไม่ใช่ข้อพิสูจน์กำไรจริง alpha หรือนัยสำคัญทางสถิติ ไม่ปฏิเสธสมมติฐานลด drawdown เพียงเพราะผลตอบแทนต่ำกว่า",
+    "original_hypothesis": "SMA crossover may reduce drawdown versus equal-allocation buy-and-hold after costs.",
+    "original_falsification": "No consistent out-of-sample drawdown benefit across chronological folds; report return trade-off and inadequate trade counts, never select on holdout.",
+    "winner_selected": false
+  },
+  "lessons_th": [
+    "แยกสมมติฐานลด drawdown ออกจากข้ออ้างชนะผลตอบแทน พร้อมรายงานต้นทุนของการลดความเสี่ยง",
+    "BH10 เทียบงบลงทุนเริ่มต้น ไม่ได้จับคู่ความเสี่ยงหรือสัดส่วนการถือครองทุกชั่วโมง ส่วน BH100 ใช้ประกอบบริบทเท่านั้น",
+    "WinRate นับกำไรสุทธิบวกอย่างเคร่งครัดจากรายการปิดจริง ไม่รวมสถานะเปิด ไม่ใช่โอกาสกำไรในอนาคต",
+    "Annualized return เป็นการปรับสเกลเลขคณิตตามสูตรทบต้น ไม่ใช่ผลตอบแทนหนึ่งปีที่เกิดขึ้นจริงในแต่ละ fold",
+    "ไม่ควรนำสามบัญชีที่เริ่มใหม่มาสร้างผลตอบแทนต่อเนื่องสองปีหรือ pooled Sharpe",
+    "คำวิจารณ์ที่เห็นเพียง summary ต้องไม่สรุปว่าเอกสารต้นทางไม่มีจริง"
+  ],
+  "proposed_next_hypotheses_th": [
+    {
+      "hypothesis_th": "หากได้รับอนุมัติแยกต่างหากในอนาคต ให้ตรึงเกณฑ์ขั้นต่ำของประโยชน์ drawdown และงบยอมเสียผลตอบแทนก่อนทดสอบข้อมูลใหม่ โดยคงรายงานทุกชุด ไม่เลือกชุดจาก holdout ที่เปิดแล้ว",
+      "executed": false,
+      "approval_granted": false
+    },
+    {
+      "hypothesis_th": "ทดสอบความทนทานของประโยชน์ drawdown ต่อค่าต้นทุนและความไม่แน่นอนแบบ block-aware ในทุกช่วงใหม่ โดยเก็บ stress ledger และ equity เต็มเพื่อคำนวณ Sharpe/WinRate ตรวจซ้ำได้ ขณะนี้เป็นเพียงข้อเสนอ inert",
+      "executed": false,
+      "approval_granted": false
+    }
+  ],
+  "limitations_th": [
+    "ผลทั้งหมดเป็น backtest BTCUSDT รายชั่วโมงชุดเดียว ไม่ใช่เงินจริง ไม่มีช่วงความเชื่อมั่นหรือการทดสอบนัยสำคัญ/กำลังทดสอบ และสี่ชุดใช้ข้อมูลร่วมกันจึงไม่ใช่หลักฐานอิสระสี่ครั้ง",
+    "Sharpe ใช้ arithmetic mean ของ simple hourly returns และ sample SD ddof=1 คูณ sqrt(8760) ที่ rf=0; เป็นการ annualize แบบมาตรฐาน ไม่ได้ปรับ autocorrelation หรือ fat tails; เงินสดมี SD=0 จึงเป็น null ไม่ใช่ 0",
+    "ช่วงพัฒนาเริ่มหลัง warm-up ต่างกัน: slow50 มี 8710 ชั่วโมง slow100 มี 8660 ชั่วโมง จึงไม่ควรจัดอันดับพัฒนาข้ามชุดโดยไม่เตือน; OOS แต่ละช่วง 2920 ชั่วโมง และเริ่มบัญชี 10000 ใหม่",
+    "ราคา timestamp เป็นเวลาเปิดแท่ง ส่วน equity ณ close ต้องเลื่อนเวลาหนึ่งชั่วโมง; end-exclusive เป็น 2026-10-01T00:00:00+00:00 ไม่ใช่เปิดแท่งสุดท้าย",
+    "stress เก็บเฉพาะสี่ค่า aggregate ของ development; ไม่มี stress ledger/equity เต็มหรือ stress OOS จึงหา Sharpe/WinRate stress ไม่ได้และไม่รันทดแทน",
+    "commission/spread เป็นสมมติฐาน ไม่ใช่ค่าบัญชีที่ยืนยัน; ไม่มี market impact และไม่ได้รับรอง latency สภาพคล่อง หรือ partial fills จริง",
+    "drawdown ใช้ close-to-close รวมเงินตั้งต้น ไม่ครอบคลุม intrabar; exposure_pct คือเวลาที่มีสถานะ ไม่ใช่สัดส่วนเงินหรือความเสี่ยงที่เท่ากัน",
+    "ทั้งกลยุทธ์และ BH ประเมินสถานะเปิดที่ close สุดท้ายโดยไม่บังคับขายหรือหัก exit fee สมมติ จึงสอดคล้องกันบน mark-to-market basis แต่ไม่ใช่มูลค่า liquidation สุทธิ",
+    "ตรวจความสอดคล้องของ registry/hash และข้อมูลบันทึก ไม่รับรองว่าไม่มี leakage นอกกระบวนการหรือประวัติลองที่ไม่บันทึก และไม่เป็น security boundary หากผู้ใช้เขียนประวัติใหม่ทั้งหมดได้",
+    "ไม่มี broker warning/cancellation lifecycle log เต็ม คำสั่งที่ไม่ปรากฏใน saved signals ไม่สามารถรับรองได้"
+  ],
+  "original_critic_input_limitations": {
+    "original_critics_preserved": true,
+    "static_input_evidence": "src/trading_lab/runner.py: ExperimentLoop._learn sends summary metrics, parameters, baselines, cost stress/assumptions, fold summaries, deterministic critic, source_event; not full source, raw data, ledger, equity, spec or audit chain",
+    "corrections_th": [
+      "คำกล่าวว่าไม่มีข้อมูลต้นทาง/ledger/equity/code/provenance เป็นข้อจำกัดของ input นักวิจารณ์ ไม่ใช่ข้อเท็จจริงของ repository: อ่าน raw pages, source, spec และ artifact ที่ตรวจด้วย Registry.verify/verify_result_artifact แล้ว",
+      "รายละเอียดสถานะปลายงวดระบุชัดใน source/metadata และ artifact: finalize_trades=False, mark_to_final_close_no_forced_fill; BH และกลยุทธ์ไม่หัก exit fee สมมติเหมือนกัน จึงไม่ใช่ข้อบกพร่องด้านความเท่าเทียมที่ยังไม่ทราบ",
+      "ประวัติ batch ปัจจุบันมี 4 configurations, 20 evaluations ตาม spec; ไม่ใช่ไม่ทราบจำนวนการลองใน batch แต่ยังรับรองประวัติที่ไม่ถูกบันทึกภายนอกไม่ได้",
+      "นิยาม exposure_pct มีอยู่ใน source เป็นสัดส่วนแท่งที่ถือ long ที่ close ไม่ใช่เงินลงทุน 100%; รายงานตัวเลขใกล้ 100% ของ BH10 จึงไม่ผิดนิยาม",
+      "Sharpe และ WinRate ของต้นทุนปกติคำนวณซ้ำได้จากหลักฐานที่บันทึก; ข้อจำกัด stress ledger/curve และ stress OOS เป็นการขาดจริง",
+      "คำวิจารณ์ 20/100 ที่ระบุ trades สองช่วงแรก 18,20 สลับกับ artifact จริง ซึ่งเป็น 20,18,17 ตามลำดับ; ไม่แก้ต้นฉบับ",
+      "คำตัดสิน REJECTED ที่อิงไม่ชนะผลตอบแทนไม่ใช่การทดสอบตรงสมมติฐานเดิมซึ่งเน้นลด drawdown; หลักฐานความเสี่ยงกับข้ออ้างกำไรต้องแยกกัน"
+    ]
+  },
+  "no_promotion": true,
+  "no_next_batch_started": true,
+  "safety": {
+    "new_engine_evaluations": 0,
+    "network_calls": 0,
+    "model_calls": 0,
+    "saved_engine_evaluations": 20,
+    "protected_files_checked": 78,
+    "protected_changed_files": [],
+    "registry_writes": 0,
+    "trades_or_schedules_or_paper_started": false,
+    "report_only_write": true,
+    "immutability": "exclusive create (no overwrite), Windows read-only attribute; SHA256 returned separately; not administrator-proof WORM"
+  }
+}

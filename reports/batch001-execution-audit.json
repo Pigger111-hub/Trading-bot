@@ -1,0 +1,951 @@
+{
+  "BTC_size": {
+    "fractional_unit": 1e-08,
+    "max": 0.01660301,
+    "min": 0.00810466,
+    "positions_checked": 707
+  },
+  "approved_code_hash": "68878a4bf03dd9912e4970ba126858ac7c1fbbc6f995700fb8a735b681cbbec8",
+  "artifacts": [
+    {
+      "path": "experiments/ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8.json",
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "sha256": "3fcad33025a088d424482b212ae64eef74f4cf3d4654a0a34382d5ed364a6dda",
+      "verified_by": "verify_result_artifact (before and after audit)"
+    },
+    {
+      "path": "experiments/69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19.json",
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "sha256": "c50f5573da1816c5d422cbacaeb45da350401343b8364d57ab903b5f392e8f44",
+      "verified_by": "verify_result_artifact (before and after audit)"
+    },
+    {
+      "path": "experiments/c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c.json",
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "sha256": "936bd81dfed3de50f9054a36e03b7a95282b2dfb66685aaa707c53f973d8c8e2",
+      "verified_by": "verify_result_artifact (before and after audit)"
+    },
+    {
+      "path": "experiments/aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066.json",
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "sha256": "936f80112c37a4d67d1b89fb1667da3fd1f4d90c86410ae6fd80d54ecc497ef4",
+      "verified_by": "verify_result_artifact (before and after audit)"
+    }
+  ],
+  "canceled_fills": {
+    "conclusion": "No cancellation inferred for any saved signal; direct broker cancellation/warning log is unavailable.",
+    "direct_cancellation_log_available": false,
+    "unmatched_saved_signals": 0
+  },
+  "checks": {
+    "artifact_cost_commission": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "artifact_cost_spread": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "artifact_engine_evaluations_saved": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "artifact_spec": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "artifact_stress_multiplier": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "completed_artifact_count": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "curve_active_terminal_count": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "curve_equity_accounting": {
+      "count": 69780,
+      "failed": 0,
+      "max_error": 1.0913936421275139e-11,
+      "tolerance": 1e-07
+    },
+    "curve_nonnegative_cash": {
+      "count": 69780,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "curve_position_size_BTC": {
+      "count": 69780,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-12
+    },
+    "curve_spot_cash": {
+      "count": 69780,
+      "failed": 0,
+      "max_error": 1.0913936421275139e-11,
+      "tolerance": 1e-07
+    },
+    "detailed_result_count": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "diagnostics_curve_points": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "diagnostics_marks": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "diagnostics_signals": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "diagnostics_trades": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "entry_after_signal": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "entry_has_buy_signal": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "entry_notional_plus_fee_within_cap": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "entry_price_open_plus_spread": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 2.9103830456733704e-11,
+      "tolerance": 1e-08
+    },
+    "entry_satoshi_floor_size": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1
+    },
+    "exit_has_active_position": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "exit_has_close_signal": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "exit_price_raw_open": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 1.4551915228366852e-11,
+      "tolerance": 1e-08
+    },
+    "exposure_curve_reconciliation": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-10
+    },
+    "fill_signal_timestamp": {
+      "count": 1406,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "fold_count": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "installed_backtesting_version": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "integer_satoshi_size": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 2.3283064365386963e-10,
+      "tolerance": 1e-06
+    },
+    "known_signal_action": {
+      "count": 1406,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_cash": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_commission": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_fractional_unit": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_margin": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_spread": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_terminal_exit_commission_applied": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "metadata_trade_on_close": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "next_candle_execution_time": {
+      "count": 1406,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "positive_BTC_size": {
+      "count": 707,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "protected_files_unchanged": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "realized_commission_entry_plus_exit_exactly_once": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 6.661338147750939e-16,
+      "tolerance": 1e-09
+    },
+    "realized_net_pnl": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 1.6342482922482304e-13,
+      "tolerance": 1e-08
+    },
+    "realized_pnl_aggregate": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-08
+    },
+    "realized_status": {
+      "count": 699,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "registry_event_count_unchanged": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "return_equity_reconciliation": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-10
+    },
+    "saved_engine_evaluations_total": {
+      "count": 1,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "signal_fill_bijection": {
+      "count": 1406,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "single_long_no_pyramiding": {
+      "count": 69780,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "stress_aggregate_exposure_unchanged": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-10
+    },
+    "stress_aggregate_trade_count_unchanged": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "stress_saved_only_four_aggregate_metrics": {
+      "count": 4,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "terminal_entry_fee_once": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-09
+    },
+    "terminal_equity_10000_plus_realized_plus_netterminal": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 7.275957614183426e-12,
+      "tolerance": 1e-07
+    },
+    "terminal_equity_curve_last": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-09
+    },
+    "terminal_gross_pnl": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-08
+    },
+    "terminal_mark_price": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-08
+    },
+    "terminal_mark_time": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "terminal_net_entry_fee_only": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 1e-08
+    },
+    "terminal_no_exit_fields": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "terminal_status": {
+      "count": 8,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "trades_metric": {
+      "count": 16,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    },
+    "unique_signal_action_execution": {
+      "count": 1406,
+      "failed": 0,
+      "max_error": 0.0,
+      "tolerance": 0
+    }
+  },
+  "conclusions_th": [
+    "ตรวจข้อมูลผลจริงที่บันทึกไว้ครบ 4 ชุดพารามิเตอร์ รวม development และ 3 folds จำนวน 16 ผล โดยตรวจ hash ของ registry และผลลัพธ์ทุกไฟล์ก่อนใช้งาน",
+    "สัญญาณซื้อและปิดสถานะที่บันทึกไว้จับคู่กับรายการซื้อขายหรือสถานะปลายงวดได้แบบหนึ่งต่อหนึ่ง ตรวจขนาด BTC ระดับ 1 satoshi และค่าธรรมเนียมเข้า/ออกโดยไม่คิดซ้ำ รวมทั้งกระทบยอด equity ทุกจุด",
+    "ผล stress ต้นทุนสองเท่าตรวจได้เพียงตัวเลขสรุป development เพราะไม่ได้บันทึกสมุดรายการและเส้น equity แบบเต็ม จึงไม่รับรองรายละเอียด fill หรือค่าธรรมเนียมรายรายการของ stress",
+    "ไม่มีการรัน backtest เพิ่ม ไม่มีการเปลี่ยน source/registry/ข้อมูล/ข้อกำหนดความเสี่ยง และผลนี้ไม่ใช่การยืนยันกำไรจริงหรือการอนุมัติ paper/live"
+  ],
+  "cost_formulas": {
+    "curve_equity": "10000 + realized net PnL through current candle + active gross mark PnL - active entry fees",
+    "entry_fee": "BTC_size * entry_price * 0.001, paid once on open",
+    "entry_price": "raw_next_open * (1 + 0.0005)",
+    "exit_fee": "BTC_size * exit_price * 0.001, paid once on realized close",
+    "exit_price": "raw_next_open (no second spread)",
+    "realized_net_pnl": "BTC_size * (exit_price - entry_price) - entry_fee - exit_fee",
+    "terminal_equity": "10000 + sum(realized net PnL) + sum(terminal net mark PnL)",
+    "terminal_net_mark_pnl": "BTC_size * (last_close - entry_price) - entry_fee; no exit fee"
+  },
+  "created_at": "2026-10-28T06:03:24.049862+00:00",
+  "dataset_id": "79f63ac8f5a247be94adc04f1fa29bb3",
+  "dataset_identity": "2689f308c768490b6e6bb29f302f049ef06773b89c8426196de2a4c508014a10",
+  "dataset_rows": 17520,
+  "detailed_results": [
+    {
+      "BTC_size_max": 0.01627187,
+      "BTC_size_min": 0.00838728,
+      "counts": {
+        "buy_signals": 118,
+        "close_signals": 117,
+        "curve_points": 8710,
+        "realized_trades": 117,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 54.50057405281286,
+      "net_terminal_mark_pnl": 36.61893831580116,
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "realized_pnl": -13.559127539550245,
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "scope": "development",
+      "terminal_equity": 10023.059810776243
+    },
+    {
+      "BTC_size_max": 0.01154354,
+      "BTC_size_min": 0.00810466,
+      "counts": {
+        "buy_signals": 42,
+        "close_signals": 42,
+        "curve_points": 2920,
+        "realized_trades": 42,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 41.78082191780822,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "realized_pnl": -377.22870156278174,
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "scope": "fold_0",
+      "terminal_equity": 9622.77129843722
+    },
+    {
+      "BTC_size_max": 0.01501823,
+      "BTC_size_min": 0.01208588,
+      "counts": {
+        "buy_signals": 37,
+        "close_signals": 37,
+        "curve_points": 2920,
+        "realized_trades": 37,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 51.33561643835616,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "realized_pnl": -162.8740284729064,
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "scope": "fold_1",
+      "terminal_equity": 9837.125971527093
+    },
+    {
+      "BTC_size_max": 0.01660301,
+      "BTC_size_min": 0.011860840000000001,
+      "counts": {
+        "buy_signals": 42,
+        "close_signals": 41,
+        "curve_points": 2920,
+        "realized_trades": 41,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 52.26027397260274,
+      "net_terminal_mark_pnl": -21.28662731082275,
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "realized_pnl": 131.33481463983017,
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "scope": "fold_2",
+      "terminal_equity": 10110.048187329
+    },
+    {
+      "BTC_size_max": 0.015868860000000002,
+      "BTC_size_min": 0.008344840000000001,
+      "counts": {
+        "buy_signals": 85,
+        "close_signals": 84,
+        "curve_points": 8660,
+        "realized_trades": 84,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 54.18013856812933,
+      "net_terminal_mark_pnl": 27.133570694307984,
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "realized_pnl": -120.7037301715087,
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "scope": "development",
+      "terminal_equity": 9906.4298405228
+    },
+    {
+      "BTC_size_max": 0.01125344,
+      "BTC_size_min": 0.00864449,
+      "counts": {
+        "buy_signals": 22,
+        "close_signals": 22,
+        "curve_points": 2920,
+        "realized_trades": 22,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 38.082191780821915,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "realized_pnl": -255.79861616993364,
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "scope": "fold_0",
+      "terminal_equity": 9744.201383830066
+    },
+    {
+      "BTC_size_max": 0.01490925,
+      "BTC_size_min": 0.01219972,
+      "counts": {
+        "buy_signals": 29,
+        "close_signals": 29,
+        "curve_points": 2920,
+        "realized_trades": 29,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 50.37671232876713,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "realized_pnl": -127.1315346815268,
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "scope": "fold_1",
+      "terminal_equity": 9872.86846531848
+    },
+    {
+      "BTC_size_max": 0.01655177,
+      "BTC_size_min": 0.01202142,
+      "counts": {
+        "buy_signals": 21,
+        "close_signals": 20,
+        "curve_points": 2920,
+        "realized_trades": 20,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 50.273972602739725,
+      "net_terminal_mark_pnl": -7.672062111142796,
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "realized_pnl": 147.2295262282765,
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "scope": "fold_2",
+      "terminal_equity": 10139.55746411714
+    },
+    {
+      "BTC_size_max": 0.01624905,
+      "BTC_size_min": 0.00822214,
+      "counts": {
+        "buy_signals": 105,
+        "close_signals": 104,
+        "curve_points": 8710,
+        "realized_trades": 104,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 54.28243398392652,
+      "net_terminal_mark_pnl": 40.29357323649836,
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "realized_pnl": -254.89008497520084,
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "scope": "development",
+      "terminal_equity": 9785.4034882613
+    },
+    {
+      "BTC_size_max": 0.01151764,
+      "BTC_size_min": 0.00818189,
+      "counts": {
+        "buy_signals": 28,
+        "close_signals": 28,
+        "curve_points": 2920,
+        "realized_trades": 28,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 40.821917808219176,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "realized_pnl": -181.59496121879474,
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "scope": "fold_0",
+      "terminal_equity": 9818.405038781204
+    },
+    {
+      "BTC_size_max": 0.01515371,
+      "BTC_size_min": 0.01223028,
+      "counts": {
+        "buy_signals": 29,
+        "close_signals": 29,
+        "curve_points": 2920,
+        "realized_trades": 29,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 51.26712328767123,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "realized_pnl": -60.93168226917779,
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "scope": "fold_1",
+      "terminal_equity": 9939.068317730826
+    },
+    {
+      "BTC_size_max": 0.01651636,
+      "BTC_size_min": 0.01188961,
+      "counts": {
+        "buy_signals": 34,
+        "close_signals": 33,
+        "curve_points": 2920,
+        "realized_trades": 33,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 52.43150684931507,
+      "net_terminal_mark_pnl": -13.567696820081894,
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "realized_pnl": 78.20204248015345,
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "scope": "fold_2",
+      "terminal_equity": 10064.634345660072
+    },
+    {
+      "BTC_size_max": 0.01598874,
+      "BTC_size_min": 0.00864005,
+      "counts": {
+        "buy_signals": 59,
+        "close_signals": 58,
+        "curve_points": 8660,
+        "realized_trades": 58,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 55.02309468822171,
+      "net_terminal_mark_pnl": 14.84054149996877,
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "realized_pnl": 299.99095060099836,
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "scope": "development",
+      "terminal_equity": 10314.83149210097
+    },
+    {
+      "BTC_size_max": 0.01126363,
+      "BTC_size_min": 0.00864449,
+      "counts": {
+        "buy_signals": 20,
+        "close_signals": 20,
+        "curve_points": 2920,
+        "realized_trades": 20,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 38.56164383561644,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "realized_pnl": -206.02580455771246,
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "scope": "fold_0",
+      "terminal_equity": 9793.974195442288
+    },
+    {
+      "BTC_size_max": 0.014837890000000001,
+      "BTC_size_min": 0.01213519,
+      "counts": {
+        "buy_signals": 19,
+        "close_signals": 18,
+        "curve_points": 2920,
+        "realized_trades": 18,
+        "terminal_positions": 1
+      },
+      "exposure_pct": 50.06849315068493,
+      "net_terminal_mark_pnl": -16.32450638100562,
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "realized_pnl": -176.80464479301077,
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "scope": "fold_1",
+      "terminal_equity": 9806.870848825982
+    },
+    {
+      "BTC_size_max": 0.01642412,
+      "BTC_size_min": 0.0118234,
+      "counts": {
+        "buy_signals": 17,
+        "close_signals": 17,
+        "curve_points": 2920,
+        "realized_trades": 17,
+        "terminal_positions": 0
+      },
+      "exposure_pct": 49.82876712328767,
+      "net_terminal_mark_pnl": 0,
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "realized_pnl": 32.467661806882894,
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "scope": "fold_2",
+      "terminal_equity": 10032.467661806888
+    }
+  ],
+  "doubled_cost_development_comparison": [
+    {
+      "doubled_cost": {
+        "exposure_pct": 54.50057405281286,
+        "max_drawdown_pct": -7.051553418179745,
+        "return_pct": -2.669670435713034,
+        "trades": 117
+      },
+      "exposure_percentage_point_difference": 0.0,
+      "full_ledger_or_curve_saved": false,
+      "full_stress_execution_audited": false,
+      "normal": {
+        "exposure_pct": 54.50057405281286,
+        "max_drawdown_pct": -4.689447783987966,
+        "return_pct": 0.2305981077624253,
+        "trades": 117
+      },
+      "parameters": {
+        "fast": 10,
+        "slow": 50
+      },
+      "return_percentage_point_difference": -2.9002685434754594,
+      "run_id": "ec9ba548545ecd7bc16f0d7997018fdd60dbd344018b608b0d3bf11b16bf72b8",
+      "trade_count_difference": 0
+    },
+    {
+      "doubled_cost": {
+        "exposure_pct": 54.18013856812933,
+        "max_drawdown_pct": -7.485084194475444,
+        "return_pct": -3.0038570182872038,
+        "trades": 84
+      },
+      "exposure_percentage_point_difference": 0.0,
+      "full_ledger_or_curve_saved": false,
+      "full_stress_execution_audited": false,
+      "normal": {
+        "exposure_pct": 54.18013856812933,
+        "max_drawdown_pct": -5.724470491334143,
+        "return_pct": -0.9357015947719982,
+        "trades": 84
+      },
+      "parameters": {
+        "fast": 10,
+        "slow": 100
+      },
+      "return_percentage_point_difference": -2.0681554235152055,
+      "run_id": "69d74549a87b211a80915f61c6f85119b71a17073fa311ee5b27642b48e0ff19",
+      "trade_count_difference": 0
+    },
+    {
+      "doubled_cost": {
+        "exposure_pct": 54.28243398392652,
+        "max_drawdown_pct": -8.153773745110138,
+        "return_pct": -4.663365043305545,
+        "trades": 104
+      },
+      "exposure_percentage_point_difference": 0.0,
+      "full_ledger_or_curve_saved": false,
+      "full_stress_execution_audited": false,
+      "normal": {
+        "exposure_pct": 54.28243398392652,
+        "max_drawdown_pct": -6.102683569136702,
+        "return_pct": -2.1459651173870053,
+        "trades": 104
+      },
+      "parameters": {
+        "fast": 20,
+        "slow": 50
+      },
+      "return_percentage_point_difference": -2.5173999259185393,
+      "run_id": "c5dfa185110b6f3ccea5d236632ab1d33daf23ee9e60304bc303e199a937118c",
+      "trade_count_difference": 0
+    },
+    {
+      "doubled_cost": {
+        "exposure_pct": 55.02309468822171,
+        "max_drawdown_pct": -4.072835111811224,
+        "return_pct": 1.643388440696869,
+        "trades": 58
+      },
+      "exposure_percentage_point_difference": 0.0,
+      "full_ledger_or_curve_saved": false,
+      "full_stress_execution_audited": false,
+      "normal": {
+        "exposure_pct": 55.02309468822171,
+        "max_drawdown_pct": -3.6018233821308976,
+        "return_pct": 3.1483149210096872,
+        "trades": 58
+      },
+      "parameters": {
+        "fast": 20,
+        "slow": 100
+      },
+      "return_percentage_point_difference": -1.5049264803128182,
+      "run_id": "aecdc75d50f603c81604d68529aafb50b5662ce87433e74bb62285bf183a4066",
+      "trade_count_difference": 0
+    }
+  ],
+  "duplicate_fills_or_signals": [],
+  "kind": "DATA",
+  "missing_fills": [],
+  "orphan_fills": [],
+  "pass": true,
+  "pass_scope": "Saved normal-cost development + three folds per trial; doubled-cost aggregate comparison only. Pass does not certify unsaved stress executions or missing warning logs.",
+  "registry": {
+    "event_ids": [
+      50,
+      59,
+      68,
+      77
+    ],
+    "filtered_completed_events": 4,
+    "verification_method": "Registry.verify via read-only sqlite connection; constructor writes bypassed",
+    "verified_events_after": 84,
+    "verified_events_before": 84
+  },
+  "safety": {
+    "creation_mode": "exclusive create; read-only file attribute after write; SHA256 externally returned",
+    "model_calls": 0,
+    "network_calls": 0,
+    "new_engine_evaluations": 0,
+    "protected_changed_files": [],
+    "protected_file_count": 57,
+    "report_only_data_write": true,
+    "saved_completed_engine_evaluations": 20,
+    "source_registry_data_risk_changes": false
+  },
+  "schema": "batch001_execution_audit_v1",
+  "spec_id": "f95c353c980937d548363e0b8bfeca737b7b98bc8d394b144ad6c2fba133263f",
+  "static_source_evidence": {
+    "backtesting_version": "0.6.6",
+    "fee_accounting_explanation": "_open_trade deducts entry fee once. _close_trade credits gross PnL less exit fee; recorded Commission recomputes entry fee for statistics only, not a second cash deduction. All saved realized fees/PnLs and every saved curve mark independently reconcile.",
+    "sources": [
+      {
+        "lines": "20, 99-117, 165-224",
+        "path": "src/trading_lab/backtest.py",
+        "sha256": "3e1d162ddcc51e5eb1fd39262cd5b62f766eab202d91fcfba8d88067c98b8a5b"
+      },
+      {
+        "lines": "509-559",
+        "path": ".venv/Lib/site-packages/backtesting/lib.py",
+        "sha256": "fffdfdd3922633a07f59cac7e2ac3092320ebd3a306adbd89e7ca7bde94d5403"
+      },
+      {
+        "lines": "838-843, 915-979, 1006-1020, 1078-1103",
+        "path": ".venv/Lib/site-packages/backtesting/backtesting.py",
+        "sha256": "30d8b5ed9c69e4891bd41fe6fa157dcdd9915c2aff279056c8975b0918178852"
+      },
+      {
+        "lines": "43-56",
+        "path": "src/trading_lab/worker.py",
+        "sha256": "1c768f0c77fde1116d38c7d92c771f67ce3d072e8385eda032954945e3e65214"
+      }
+    ]
+  },
+  "totals": {
+    "buy_signals": 707,
+    "close_long_signals": 699,
+    "curve_points": 69780,
+    "detailed_results": 16,
+    "realized_trades": 699,
+    "terminal_positions": 8
+  },
+  "verified_code_hash": "68878a4bf03dd9912e4970ba126858ac7c1fbbc6f995700fb8a735b681cbbec8",
+  "violations": [],
+  "warning_coverage_limitations": [
+    "Doubled-cost development saves only return_pct, max_drawdown_pct, trades and exposure_pct. Its full ledger, signals, terminal positions and equity curve are NOT saved and were NOT inspected. Matching trades/exposure is aggregate evidence only, not proof of identical stress fills, sizes or per-trade fee correctness.",
+    "No original per-run broker warning stream, cancellation log or order lifecycle log is persisted in the experiment JSON. All saved buy/close signals are reconciled one-to-one to saved positions/exits; no missing or duplicate fills are inferable, but absence of broker warnings/cancellations outside saved signals is not independently proven.",
+    "This audits simulated accounting and persisted execution evidence only, not exchange fills, real account fees, slippage, liquidity, market impact, profitability or readiness for paper/live trading.",
+    "Float equalities are checked within explicit per-check tolerances, not bitwise equality. One-satoshi tolerance is allowed only for independent floor-size recomputation because floating operation order differs; all saved sizes are checked against integer satoshi units.",
+    "Registry and artifact hashes are tamper-evident consistency evidence, not a security boundary against an actor able to rewrite the entire local history.",
+    "Installed backtesting 0.6.6 source was inspected statically. FractionalBacktest rescales prices by 1e-8 and converts ledger size back to BTC; no engine, synthetic test, model call or network call was executed during this audit."
+  ]
+}
