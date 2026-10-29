@@ -1,3 +1,7 @@
+export type ResearchJSON = null | boolean | number | string | ResearchJSON[] | {[key:string]:ResearchJSON};
+export type Phase3Item = {[key:string]:ResearchJSON};
+export type Phase3Collection = 'sources'|'cards'|'gaps'|'hypotheses'|'queue'|'lessons'|'cycles';
+export type Phase3Snapshot = Record<Phase3Collection,Phase3Item[]> & {available:boolean;integrity:{verified:boolean;event_count:number;head_hash:string|null};counts:Record<Phase3Collection,number>;safety:{execution_enabled:false;scheduler_enabled:false;credentials_enabled:false}};
 export interface Scope {id:string;label_th:string;start_utc:string;end_exclusive_utc:string}
 export interface Strategy {id:string;label:string;fast:number;slow:number;run_id:string;scopes?:Scope[]}
 export interface Overview {batch_id:string;spec_id:string;simulation:boolean;status:string;integrity:{verified:boolean;event_count:number;dataset_rows:number;artifact_count:number;engine_evaluations:number;code_hash:string;dataset_hash:string;policy_hash:string;manifest_hash:string};strategies:(Strategy & {scopes:Scope[]})[];limitations_th:string[]}

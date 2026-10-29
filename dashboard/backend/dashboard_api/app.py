@@ -77,6 +77,19 @@ def create_app(root: Path | None = None, store: Any = None, dist: Path | None = 
     def trade(trade_id: str, strategy: str = '10-50', scope: str = 'oos_1'):
         return read('trade', strategy, scope, trade_id)
 
+    @app.get('/api/phase3')
+    def phase3():
+        # Original evidence is always verified first, including on missing new state.
+        original = read('overview')
+        try:
+            if original.get('integrity', {}).get('verified') is not True:
+                raise ValueError('Original evidence unverified')
+            from lab3.store import Store
+            return Store.read_snapshot(root)
+        except (ValueError, OSError) as error:
+            raise HTTPException(503, detail={'code': 'INTEGRITY_ERROR',
+                'message_th': 'Phase3 ตรวจสอบไม่ผ่าน ล้างข้อมูลวิจัยใหม่และไม่ใช้ข้อมูลเก่าทดแทน'}) from error
+
     @app.get('/api/research')
     def research():
         return read('research')

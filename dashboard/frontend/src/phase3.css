@@ -1,0 +1,32 @@
+/* Phase3 is isolated from the original charts and metric layout. */
+.phase3 { min-width: 0; }
+.phase3 .panel { min-width: 0; }
+.phase3 h2 { font-size: 16px; margin: 0 0 14px; color: #d7e2ee; }
+.phase3 h3 { overflow-wrap: anywhere; color: #a9c5d5; }
+.phase3 p { line-height: 1.8; overflow-wrap: anywhere; }
+.phase3 pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 420px; overflow: auto; background: #0a111b; border: 1px solid #243245; border-radius: 5px; padding: 12px; color: #9bb0c4; line-height: 1.7; font-size: 11px; }
+.phase3-counts, .phase3-record-meta { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.phase3 .research-grid { align-items: start; }
+.phase3 .research-grid > section { min-width: 0; }
+.phase3 .phase3-records .research-item:last-child { border-bottom: 0; }
+.phase3 h4 { margin: 14px 0 8px; color: #b8cbdc; font-size: 13px; }
+.phase3-fields { margin: 8px 0 16px; line-height: 1.7; }
+.phase3-fields > div { display: grid; grid-template-columns: minmax(100px, .8fr) minmax(0, 1.7fr); gap: 12px; padding: 6px 0; border-bottom: 1px solid #1b2938; }
+.phase3-fields dt { color: #8fa8bc; overflow-wrap: anywhere; }
+.phase3-fields dd { margin: 0; min-width: 0; color: #cad6e2; overflow-wrap: anywhere; white-space: pre-wrap; }
+.phase3-fields .phase3-fields { margin: 0; }
+.phase3-fields .phase3-fields > div { grid-template-columns: minmax(70px, .8fr) minmax(0, 1.4fr); }
+.phase3-list { padding-left: 18px; margin: 0; }
+.phase3-list li { padding: 2px 0; overflow-wrap: anywhere; }
+.phase3-rankings { border: 1px solid #31485c; border-left: 3px solid #6dabc2; padding: 0 14px 10px; margin: 16px 0; border-radius: 5px; background: #0c1722; }
+.phase3-rankings ol { padding-left: 24px; }
+.phase3-rankings li { margin: 10px 0; overflow-wrap: anywhere; }
+.phase3-rankings li p { margin: 4px 0; color: #a5cbd9; }
+.phase3-notice { color: #dbbf85; }
+.phase3-critic { border-top: 1px solid #29394a; }
+.phase3-raw { margin: 12px 0; }
+.phase3-raw summary { cursor: pointer; color: #8fa8bc; overflow-wrap: anywhere; line-height: 1.8; }
+.phase3-raw summary:focus-visible { outline: 2px solid #6dabc2; outline-offset: 4px; }
+@media (max-width: 700px) {
+ .phase3-fields > div, .phase3-fields .phase3-fields > div { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+}

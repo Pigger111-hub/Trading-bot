@@ -103,6 +103,12 @@ REST raw row: `[open_time_ms, open, high, low, close, volume, close_time_ms, quo
 - `HYPOTHESIS`: ข้อเสนอที่ยังไม่ถูกทดลอง/อนุมัติ
 - Critic verdict เดิมและ batch-level correction เก็บแยก ไม่แก้ประวัติให้ดูดีขึ้น ไม่มี winner selection หรือ strategy promotion
 
+## Phase 3 — Autonomous research viewer
+
+แท็บ **วิจัยอัตโนมัติ · Phase3** อ่าน `phase3/state/lab.sqlite` แบบ read-only ผ่าน GET `/api/phase3` โดยตรวจ Batch001 ก่อนเสมอ Missing state แสดงว่างโดยไม่สร้าง DB; integrity failure ไม่แสดงข้อมูลเก่าทดแทน
+
+อ่าน `../phase3/README.md` สำหรับ research CLI ที่แยกจาก dashboard และ `../phase3/reports/cycle001-report-th.md` สำหรับรอบจริงครั้งแรก: workflow COMPLETED แต่ critic REVISE และทั้ง4ข้อเสนอ REJECTED ไม่ใช่ผล backtest หรือข้อเสนอพร้อมอนุมัติ หน้านี้ไม่รัน research/model/engine และไม่มี approval controls
+
 ## Five actual simulated trades
 
 อ่านคู่มือภาษาไทย `FIVE-TRADES-TH.md`: เลือก SMA 10/50 / OOS 1 แล้วตรวจ #1–#5 พร้อมราคาจำนวนค่าธรรมเนียม Net P&L และตำแหน่ง raw JSON ครบ 20 trace rows ที่ตรวจ hash และเทียบ saved ledger แล้ว

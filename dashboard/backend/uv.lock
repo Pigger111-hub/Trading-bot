@@ -172,6 +172,18 @@ wheels = [
 ]
 
 [[package]]
+name = "lab3"
+version = "0.1.0"
+source = { editable = "../../phase3" }
+
+[package.metadata]
+requires-dist = [
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=9,<10" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.17,<1" },
+]
+provides-extras = ["dev"]
+
+[[package]]
 name = "opentelemetry-api"
 version = "1.45.1"
 source = { registry = "https://pypi.org/simple" }
@@ -315,6 +327,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
+    { name = "lab3" },
     { name = "uvicorn" },
 ]
 
@@ -331,6 +344,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.115,<1" },
     { name = "httpx", marker = "extra == 'dev'", specifier = ">=0.28,<1" },
     { name = "httpx2", marker = "extra == 'dev'", specifier = ">=2.16.0" },
+    { name = "lab3", editable = "../../phase3" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=9,<10" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.17,<1" },
     { name = "uvicorn", specifier = ">=0.34,<1" },
